@@ -1,0 +1,7 @@
+Enter a number:
+6
+Enter a number:
+27
+Enter a number:
+Error, Invalid input
+Enter a number:

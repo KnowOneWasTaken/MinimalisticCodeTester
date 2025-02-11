@@ -1,0 +1,11 @@
+<Enter a number:
+>1 2 3
+<6
+<Enter a number:
+>9 9 9
+<27
+<Enter a number:
+>b
+E<
+<Enter a number:
+>quit
