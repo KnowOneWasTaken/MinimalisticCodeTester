@@ -19,8 +19,8 @@ class MainTest {
 
     private static final String ERROR_INDICATOR = "E<";
     private static final String ERROR_START = "Error,";
-    private static final String INPUT_DATA_INDICATOR = ">";
-    private static final String OUTPUT_DATA_INDICATOR = "<";
+    private static final String INPUT_DATA_INDICATOR = "> ";
+    private static final String OUTPUT_DATA_INDICATOR = "";
     private static final String ARGS_INDICATOR = "$";
 
     private static final String EXPECTED_MESSAGE = "\n- but expected:\n\n";
@@ -54,19 +54,16 @@ class MainTest {
             int lineValue = 0;
             while ((line = reader.readLine()) != null) {
                 if (line.startsWith(INPUT_DATA_INDICATOR)) { // Input data
-                    inputData.add(line.substring(1)); // Remove ">" notation
+                    inputData.add(line.substring(INPUT_DATA_INDICATOR.length())); // Remove ">" notation
                     inputOutputMap.put(lineValue, Boolean.TRUE);
-                } else if (line.startsWith(OUTPUT_DATA_INDICATOR)) { // Expected output data
-                    expectedOutputData.add(line.substring(1)); // Remove "<" notation
-                    inputOutputMap.put(lineValue, Boolean.FALSE);
                 } else if (line.startsWith(ERROR_INDICATOR)) {
                     expectedOutputData.add(ERROR_START);
                     inputOutputMap.put(lineValue, Boolean.FALSE);
                 } else if (line.startsWith(ARGS_INDICATOR)) {
                     arguments.add(line.substring(ARGS_INDICATOR.length()));
                 } else {
-                    System.err.println("It seems like your Test case " + fileName + " is not correct!");
-                    throw new IllegalArgumentException("Unexpected line " + lineValue + " in Test case " + fileName + ": " + line);
+                    expectedOutputData.add(line.substring(OUTPUT_DATA_INDICATOR.length())); // Remove "<" notation
+                    inputOutputMap.put(lineValue, Boolean.FALSE);
                 }
                 lineValue++;
             }
