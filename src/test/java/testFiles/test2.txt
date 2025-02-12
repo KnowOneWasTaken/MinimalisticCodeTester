@@ -1,9 +1,9 @@
 <Enter a number:
 >1 5 3
-<9
+<9|10
 <Enter a number:
 >9 9 9
-<27
+<shafuahfuadhvdsöuzgds8bpzü
 <Enter a number:
 >b
 E<

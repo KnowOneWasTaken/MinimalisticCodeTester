@@ -1,11 +1,17 @@
+<h[ge]+
+<fiehfeo
+<fiedof
 <Enter a number:
->1 2 3
-<6
+>5 2 8
+<\d+
 <Enter a number:
 >9 9 9
-<27
+<27|28
 <Enter a number:
 >b
-E<
+E< Error Message
 <Enter a number:
 >quit
+$h[ge]+
+$fiehfeo
+$fiedof

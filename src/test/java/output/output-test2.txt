@@ -1,7 +1,0 @@
-Enter a number:
-9
-Enter a number:
-27
-Enter a number:
-Error, Invalid input
-Enter a number:
