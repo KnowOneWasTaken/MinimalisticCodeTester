@@ -1,11 +1,11 @@
-<Enter a number:
->1 5 3
-<9|10
-<Enter a number:
->9 9 9
-<shafuahfuadhvdsöuzgds8bpzü
-<Enter a number:
->b
+Enter a number:
+> 1 5 3
+9|10
+Enter a number:
+> 9 9 9
+shafuahfuadhvdsöuzgds8bpzü
+Enter a number:
+> b
 E<
-<Enter a number:
->quit
+Enter a number:
+> quit
